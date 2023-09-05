@@ -84,14 +84,14 @@ a {
     padding-left: 3rem;
 }
 .left {
-    padding: 1.6rem;
+    padding:1rem 1.6rem;
 }
 
 .form {
     width: 80%;
     margin: 0 auto;
     position: relative;
-    top: 10%;
+    top: 6%;
 }
 
 .links {
@@ -158,4 +158,13 @@ a.signup {
     font-style: normal;
     font-weight: 600;
     line-height: 1.75rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem 1.6rem;
+}
+.underline{
+    text-decoration: underline;
 }
