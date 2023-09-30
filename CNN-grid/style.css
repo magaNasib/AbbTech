@@ -146,6 +146,13 @@ footer .footerLinks {
     font-weight: 400;
     line-height: 1.125rem;
 }
+.btnLogin{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: .4rem 1.1rem;
+}
 
 @media screen and (max-width:1200px) {
     .container {
@@ -170,9 +177,6 @@ footer .footerLinks {
     #gallery {
         grid-template-columns: 1fr 1fr;
     }
-
-   
-
 
     nav .navLinks {
         display: none;
