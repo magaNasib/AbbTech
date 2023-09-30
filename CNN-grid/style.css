@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    border-bottom: 1px solid #404040;
+    background: #0C0C0C;
+    color: #E6E6E6;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.9375rem;
+}
+
+nav .leftNavbar,
+nav .rightNavbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .leftNavbar img {
+    height: 100%;
+    width: auto;
+}
+
+li.logo {
+    margin-bottom: -3px;
+}
+
+.heading h1 {
+    margin: 1rem 0;
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.body p {
+    color: #0C0C0C;
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    /* 125% */
+    letter-spacing: 0.03125rem;
+}
+
+footer {
+    border-top: 1px solid #404040;
+    background: #0C0C0C;
+    padding: 1rem;
+    min-height: 95vh;
+    padding-bottom: 5rem;
+}
+
+footer .input {
+    padding: 3rem 0;
+    position: relative;
+
+}
+
+footer .input img {
+    position: absolute;
+    left: .8rem;
+    top: 3.2rem;
+}
+
+footer .input input {
+    width: 100%;
+    padding: 0.46875rem 8.0625rem 0.46875rem 3rem;
+    border-radius: 0.25rem;
+    border: 1px solid #B1B1B1;
+    background: #FFF;
+    outline: none;
+}
+
+footer .footerLinks {
+    display: grid;
+
+    row-gap: 2rem;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footerLinks .column h5 {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+    /* 111.111% */
+    margin-bottom: .5rem;
+
+}
+
+.footerLinks li {
+    padding: .2rem 0;
+    color: #E6E6E6;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem;
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 96%;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer .footerLinks {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 98%;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+   
+
+
+    nav .navLinks {
+        display: none;
+
+        flex-direction: column;
+        position: absolute;
+        top: 2.5rem;
+        left: 0;
+        background-color: #0C0C0C;
+        width: 100%;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    footer .footerLinks {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
