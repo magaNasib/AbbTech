@@ -18,7 +18,7 @@ numbers.forEach((number) => {
 })
 
 equalBtn.addEventListener('click', () => {
-    if (firstNumber && lastNumber && currOperand) {
+    if (!isNaN(firstNumber) && !isNaN(firstNumber) && currOperand) {
         countAndDisplay()
     }
 })
