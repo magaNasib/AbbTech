@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame {
+    width: 21rem;
+    height: 44rem;
+    background: #111;
+    padding-bottom: 4rem;
+}
+
+.screen {
+    height: 40%;
+    color: #FFF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    padding: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+
+.keyboard {
+    height: 60%;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.keyboard .line {
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.keyboard .last.line {
+
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.keyboard button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 6.25rem;
+    background: #333;
+    color: #FFF;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    line-height: normal;
+}
+
+button:hover {
+    background-color: #232222;
+
+}
+
+.last.line button:first-child {
+    width: 9rem;
+}
+
+button.topBtns {
+    color: #000;
+    background: #A5A5A5;
+}
+button.topBtns:hover{
+    background: #717171;
+}
+
+button.rightBtns {
+    background: #F89B10;
+}
+button.rightBtns:hover {
+    background: #ff8c00;
+}
