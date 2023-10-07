@@ -1,7 +1,6 @@
 let operationBtns = document.querySelectorAll('.operationBtns')
 let numbers = document.querySelectorAll('.number')
 let clearBtn = document.getElementById('clearBtn')
-let floatBtn = document.getElementById('floatBtn')
 let screen = document.getElementById('screen')
 let equalBtn = document.getElementById('equalBtn')
 
