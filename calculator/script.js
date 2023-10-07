@@ -9,26 +9,29 @@ let firstNumber = '';
 let currOperand = '';
 let lastNumber = '';
 
-operationBtns.forEach((operand) => {
-    operand.addEventListener('click', operandClickHandler)
-})
+function events() {
 
-numbers.forEach((number) => {
-    number.addEventListener('click', numberClickHandler)
-})
+    operationBtns.forEach((operand) => {
+        operand.addEventListener('click', operandClickHandler)
+    })
 
-equalBtn.addEventListener('click', () => {
-    if (!isNaN(firstNumber) && !isNaN(firstNumber) && currOperand) {
-        countAndDisplay()
-    }
-})
-clearBtn.addEventListener('click', () => {
-    screen.innerText = '';
-    firstNumber = ''
-    lastNumber = ''
-    currOperand = ''
-})
+    numbers.forEach((number) => {
+        number.addEventListener('click', numberClickHandler)
+    })
 
+    equalBtn.addEventListener('click', () => {
+        if (!isNaN(firstNumber) && !isNaN(firstNumber) && currOperand) {
+            countAndDisplay()
+        }
+    })
+    clearBtn.addEventListener('click', () => {
+        screen.innerText = '';
+        firstNumber = ''
+        lastNumber = ''
+        currOperand = ''
+    })
+
+}
 
 function operandClickHandler(e) {
     currOperand = e.target.innerText;
@@ -76,3 +79,5 @@ function countAndDisplay() {
     lastNumber = ''
     currOperand = ''
 }
+
+events()
