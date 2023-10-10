@@ -65,7 +65,7 @@ function countAndDisplay() {
             break
         case '-':
             overall = +firstNumber - +lastNumber
-            overall = +overall.toFixed(8)
+            overall = +overall.toFixed(3)
             break
         case '%':
             overall = +firstNumber % +lastNumber
